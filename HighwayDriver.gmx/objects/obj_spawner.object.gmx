@@ -25,11 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>spawnleft = true;
+            <string>/// Initializing variables
+
+spawnleft = true;
 spawnright = true;
 spawncar = true;
 spawncan = true;
 spawnblock = true;
+spawnpowerup = true;
 </string>
           </argument>
         </arguments>
@@ -109,6 +112,29 @@ spawnblock = true;
           <argument>
             <kind>0</kind>
             <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>spawnpowerup = true;
+</string>
           </argument>
         </arguments>
       </action>
@@ -245,7 +271,9 @@ spawnblock = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//spawning houses on the left
+            <string>randomize();
+
+//spawning houses on the left
 if(room != 7){
     if(spawnleft == true)
     {
@@ -378,7 +406,16 @@ if (spawnblock == true){
     spawnblock = false;
 }
 
-
+//spawning a powerup
+if (spawnpowerup == true)
+{
+    randomize();
+    timerpowerup = irandom_range(180,300)
+    xxc = choose(192,224,256,320,352,384,416);
+        instance_create(x+xxc,y,obj_powerup);
+    alarm[5] = timerpowerup;
+    spawnpowerup = false;
+}
 </string>
           </argument>
         </arguments>

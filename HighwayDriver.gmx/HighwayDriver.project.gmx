@@ -36,6 +36,7 @@
     <sprites name="traffic">
       <sprite>sprites\spr_traffic_car</sprite>
       <sprite>sprites\spr_car</sprite>
+      <sprite>sprites\spr_car_powerup</sprite>
     </sprites>
     <sprites name="buildings">
       <sprite>sprites\spr_house_left</sprite>
@@ -54,6 +55,7 @@
     </sprites>
     <sprites name="interactive">
       <sprite>sprites\spr_fuel</sprite>
+      <sprite>sprites\spr_powerup</sprite>
     </sprites>
     <sprites name="gui">
       <sprite>sprites\spr_coin</sprite>
@@ -95,6 +97,7 @@
     <objects name="traffic">
       <object>objects\obj_traffic_car</object>
       <object>objects\obj_car</object>
+      <object>objects\obj_car_powerup</object>
     </objects>
     <objects name="buildings">
       <object>objects\obj_house_right</object>
@@ -102,6 +105,7 @@
     </objects>
     <objects name="interactive">
       <object>objects\obj_fuelcan</object>
+      <object>objects\obj_powerup</object>
     </objects>
     <objects name="misc">
       <object>objects\obj_boundry</object>
