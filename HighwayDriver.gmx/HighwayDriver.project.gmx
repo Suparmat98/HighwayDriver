@@ -10,15 +10,6 @@
     <sound>sound\snd_fuel</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\spr_car</sprite>
-    <sprite>sprites\spr_house_right</sprite>
-    <sprite>sprites\spr_house_left</sprite>
-    <sprite>sprites\spr_boundry</sprite>
-    <sprite>sprites\spr_traffic_car</sprite>
-    <sprite>sprites\spr_car_explode</sprite>
-    <sprite>sprites\spr_spawner</sprite>
-    <sprite>sprites\spr_finishline</sprite>
-    <sprite>sprites\spr_menu</sprite>
     <sprites name="buttons">
       <sprite>sprites\btn_start</sprite>
       <sprite>sprites\btn_blank</sprite>
@@ -37,14 +28,35 @@
       <sprite>sprites\spr_gameover</sprite>
       <sprite>sprites\txt_gamebeated</sprite>
     </sprites>
-    <sprite>sprites\spr_coin</sprite>
-    <sprite>sprites\spr_fuel</sprite>
-    <sprite>sprites\spr_light</sprite>
-    <sprite>sprites\spr_lamps</sprite>
     <sprites name="blocks">
       <sprite>sprites\blk_start</sprite>
       <sprite>sprites\blk_end</sprite>
       <sprite>sprites\blk_middle</sprite>
+    </sprites>
+    <sprites name="traffic">
+      <sprite>sprites\spr_traffic_car</sprite>
+      <sprite>sprites\spr_car</sprite>
+    </sprites>
+    <sprites name="buildings">
+      <sprite>sprites\spr_house_left</sprite>
+      <sprite>sprites\spr_house_right</sprite>
+    </sprites>
+    <sprites name="fx">
+      <sprite>sprites\spr_car_explode</sprite>
+    </sprites>
+    <sprites name="misc">
+      <sprite>sprites\spr_boundry</sprite>
+      <sprite>sprites\spr_spawner</sprite>
+      <sprite>sprites\spr_lamps</sprite>
+      <sprite>sprites\spr_light</sprite>
+      <sprite>sprites\spr_menu</sprite>
+      <sprite>sprites\spr_finishline</sprite>
+    </sprites>
+    <sprites name="interactive">
+      <sprite>sprites\spr_fuel</sprite>
+    </sprites>
+    <sprites name="gui">
+      <sprite>sprites\spr_coin</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -56,16 +68,8 @@
     <font>fonts\fnt_default</font>
   </fonts>
   <objects name="objects">
-    <object>objects\obj_car</object>
-    <object>objects\obj_house_right</object>
-    <object>objects\obj_house_left</object>
-    <object>objects\obj_boundry</object>
+    <object>objects\par_blk</object>
     <object>objects\par_wall</object>
-    <object>objects\obj_spawner</object>
-    <object>objects\obj_traffic_car</object>
-    <object>objects\obj_explosion</object>
-    <object>objects\obj_finishline</object>
-    <object>objects\obj_menu</object>
     <objects name="buttons">
       <object>objects\obj_btn_shop</object>
       <object>objects\obj_btn_start</object>
@@ -76,7 +80,6 @@
       <object>objects\obj_btn_level2</object>
       <object>objects\obj_btn_level3</object>
     </objects>
-    <object>objects\obj_gamehandler</object>
     <objects name="images">
       <object>objects\image_car_1</object>
       <object>objects\image_car_2</object>
@@ -89,13 +92,34 @@
       <object>objects\txt_gameover</object>
       <object>objects\obj_coin</object>
     </objects>
-    <object>objects\obj_fuelcan</object>
-    <object>objects\obj_light</object>
-    <object>objects\obj_lamps</object>
-    <object>objects\obj_blk_start</object>
-    <object>objects\obj_blk_middle</object>
-    <object>objects\obj_blk_end</object>
-    <object>objects\par_blk</object>
+    <objects name="traffic">
+      <object>objects\obj_traffic_car</object>
+      <object>objects\obj_car</object>
+    </objects>
+    <objects name="buildings">
+      <object>objects\obj_house_right</object>
+      <object>objects\obj_house_left</object>
+    </objects>
+    <objects name="interactive">
+      <object>objects\obj_fuelcan</object>
+    </objects>
+    <objects name="misc">
+      <object>objects\obj_boundry</object>
+      <object>objects\obj_spawner</object>
+      <object>objects\obj_menu</object>
+      <object>objects\obj_finishline</object>
+      <object>objects\obj_light</object>
+      <object>objects\obj_lamps</object>
+      <object>objects\obj_gamehandler</object>
+    </objects>
+    <objects name="blocks">
+      <object>objects\obj_blk_start</object>
+      <object>objects\obj_blk_middle</object>
+      <object>objects\obj_blk_end</object>
+    </objects>
+    <objects name="fx">
+      <object>objects\obj_explosion</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
