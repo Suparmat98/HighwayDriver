@@ -85,8 +85,6 @@
     <objects name="images">
       <object>objects\image_car_1</object>
       <object>objects\image_car_2</object>
-      <object>objects\txt_specs_cars</object>
-      <object>objects\txt_specs_cars2</object>
       <object>objects\txt_levels</object>
       <object>objects\txt_lvlscs</object>
       <object>objects\txt_gamebd</object>
@@ -115,6 +113,7 @@
       <object>objects\obj_light</object>
       <object>objects\obj_lamps</object>
       <object>objects\obj_gamehandler</object>
+      <object>objects\obj_shophandler</object>
     </objects>
     <objects name="blocks">
       <object>objects\obj_blk_start</object>
