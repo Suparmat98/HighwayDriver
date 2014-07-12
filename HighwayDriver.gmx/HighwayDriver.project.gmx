@@ -59,6 +59,7 @@
     </sprites>
     <sprites name="gui">
       <sprite>sprites\spr_coin</sprite>
+      <sprite>sprites\spr_fuelcounter</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -92,6 +93,7 @@
       <object>objects\txt_coins</object>
       <object>objects\txt_gameover</object>
       <object>objects\obj_coin</object>
+      <object>objects\obj_fuelcounter</object>
     </objects>
     <objects name="traffic">
       <object>objects\obj_traffic_car</object>
