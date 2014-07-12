@@ -101,7 +101,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>obj_gamehandler.hp -= 1;
+            <string>/// HP decreasement
+
+if (obj_car.powerup == false) obj_gamehandler.hp -= 1;
 </string>
           </argument>
         </arguments>

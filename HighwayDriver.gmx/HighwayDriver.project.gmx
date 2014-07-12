@@ -8,6 +8,7 @@
     <sound>sound\snd_carhit</sound>
     <sound>sound\msc_background_level</sound>
     <sound>sound\snd_fuel</sound>
+    <sound>sound\snd_powerup</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="buttons">
@@ -65,8 +66,10 @@
     <background>background\bg_desert</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts"/>
   <fonts name="fonts">
     <font>fonts\fnt_default</font>
+    <font>fonts\fnt_timer</font>
   </fonts>
   <objects name="objects">
     <object>objects\par_blk</object>

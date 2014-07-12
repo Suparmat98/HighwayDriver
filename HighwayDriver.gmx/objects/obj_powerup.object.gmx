@@ -3,7 +3,7 @@
   <spriteName>spr_powerup</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-2</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -91,7 +91,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>obj_car.powerup = true;
+            <string>randomize();
+
+if (obj_car.powerup == false) obj_car.powerup = true;
+else obj_car.alarm[2] += random_range(60*5,60*9);
 </string>
           </argument>
         </arguments>

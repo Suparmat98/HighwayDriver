@@ -93,18 +93,25 @@ else
             <kind>1</kind>
             <string>draw_set_font(fnt_default);
 draw_set_color(c_yellow);
+
 if (room != 2 &amp;&amp; room != 6 &amp;&amp; room != 7)
 {
-draw_text(x+50,y+10,string(coins));
+    draw_text(x+50,y+10,string(coins));
 }
 else
 {
-draw_text(x+10,y+10,"HP: " + string(hp));
-draw_text(x+100,y+10,"Fuel: " + string(fuel));
+    draw_text(x+10,y+10,"HP: " + string(hp));
+    draw_text(x+100,y+10,"Fuel: " + string(fuel));
+    if (obj_car.powerup) {
+        draw_set_font(fnt_timer);
+        draw_set_color(c_red);
+        if (obj_car.alarm[2] &lt; 60*10) draw_text(x+(room_width/2),y+10,"0:0" + string(floor(obj_car.alarm[2]/60)));
+        else draw_text(x+(room_width/2),y+10,"0:" + string(floor(obj_car.alarm[2]/60)));
+    }
 }
 if (room == 0)
 {
-draw_text(x+50,y+500,"Press ESC to quit")
+    draw_text(x+50,y+500,"Press ESC to quit")
 }
 </string>
           </argument>
