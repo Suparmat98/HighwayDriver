@@ -21,7 +21,6 @@
       <sprite>sprites\btn_level2</sprite>
     </sprites>
     <sprites name="text">
-      <sprite>sprites\spr_specs</sprite>
       <sprite>sprites\spr_levelselect</sprite>
       <sprite>sprites\spr_levelsucces</sprite>
       <sprite>sprites\spr_coins</sprite>
@@ -113,7 +112,6 @@
       <object>objects\obj_light</object>
       <object>objects\obj_lamps</object>
       <object>objects\obj_gamehandler</object>
-      <object>objects\obj_shophandler</object>
     </objects>
     <objects name="blocks">
       <object>objects\obj_blk_start</object>
