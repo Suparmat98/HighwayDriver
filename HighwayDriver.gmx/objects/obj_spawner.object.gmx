@@ -249,7 +249,7 @@ spawnblock = true;
             <kind>1</kind>
             <string>randomize();
 
-powerupchance = irandom(500000);
+powerupchance = irandom(1000000);
 
 //spawning houses on the left
 if(room != 7){
