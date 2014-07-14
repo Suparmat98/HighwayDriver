@@ -83,7 +83,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (obj_gamehandler.lvlavel &gt;= 2){room_goto(7)}
+            <string>if (obj_gamehandler.lvlavel &gt;= 2 || global.god){room_goto(7)}
 </string>
           </argument>
         </arguments>
