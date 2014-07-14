@@ -32,6 +32,7 @@ fuel = 7;
 hp = 3;
 car = 0;
 lvlavel = 0;
+global.timer = true;
 </string>
           </argument>
         </arguments>
@@ -66,10 +67,48 @@ if (room != 4 &amp;&amp; hp == 0){room_goto(4)}
 if (room != 2 &amp;&amp; room != 6 &amp;&amp; room != 7)
 {
     instance_create(x+10,y+10,obj_coin);
+    if (audio_music_is_playing()) audio_stop_music();
+    if (audio_is_playing(snd_powerup)) audio_stop_sound(snd_powerup);
 }
 else
 {
 
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Menu stuff
+
+click = mouse_check_button_pressed(mb_left);
+
+if (mouse_x &gt;= 223 &amp;&amp; mouse_x &lt;= 275 &amp;&amp; mouse_y &gt;= 644 &amp;&amp; mouse_y &lt;= 673) {
+    if (click) {
+        switch (global.timer) {
+            case true:
+                global.timer = false;
+                break;
+            case false:
+                global.timer = true;
+                break;
+        }
+    }
 }
 </string>
           </argument>

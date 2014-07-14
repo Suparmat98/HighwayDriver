@@ -123,7 +123,7 @@ if (obj_gamehandler.car = 2)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>timer = true;
+            <string>global.timer = true;
 powerup = false;
 </string>
           </argument>
@@ -265,14 +265,14 @@ randomize();
 
 if (powerup == true) {
 
-    if (!audio_is_playing(snd_powerup) &amp;&amp; room == 2 || room == 6 || room == 7) {
+    if (!audio_is_playing(snd_powerup)) {
         audio_play_sound(snd_powerup,10,true);
         audio_pause_music();
     }
 
-    if (timer) {
+    if (global.timer) {
         alarm[2] = random_range(60*5,60*9);
-        timer = false;
+        global.timer = false;
     }
 
     if (change == 1) {
@@ -280,8 +280,11 @@ if (powerup == true) {
         alarm[1] = 10;
         change = 0;
     }
-} else if (powerup == false || room != 2 &amp;&amp; room != 6 &amp;&amp; room != 7) {
+} else if (powerup == false) {
     if (audio_is_playing(snd_powerup)) {
+        audio_stop_sound(snd_powerup);
+        audio_resume_music();
+    } else if (audio_is_playing(snd_powerup) &amp;&amp; room == 0) {
         audio_stop_sound(snd_powerup);
         audio_resume_music();
     }
