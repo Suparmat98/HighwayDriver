@@ -68,10 +68,10 @@ image_angle = 0;
 vspeed = irandom_range(4,8)
 
 //setting the rigt image angle
-if (obj_spawner.xx == 288){image_angle = 180;}
-else if (obj_spawner.xx == 192){image_angle = 180;}
-else if (obj_spawner.xx == 224){image_angle = 180;}
-else if (obj_spawner.xx == 256){image_angle = 180;}
+if (obj_spawner.xx == 288){image_angle = 180; vspeed = vspeed+1.5;}
+else if (obj_spawner.xx == 192){image_angle = 180; vspeed = vspeed+1.5;}
+else if (obj_spawner.xx == 224){image_angle = 180; vspeed = vspeed+1.5;}
+else if (obj_spawner.xx == 256){image_angle = 180; vspeed = vspeed+1.5;}
 else {image_angle = 0; vspeed = -vspeed}
 
 

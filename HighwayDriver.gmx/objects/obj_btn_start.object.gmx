@@ -55,12 +55,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (obj_gamehandler.hp == 0) or (obj_gamehandler.fuel == 0)    
-{
-    if (obj_gamehandler.color == 0){obj_gamehandler.hp = 3; obj_gamehandler.fuel = 7}
-    if (obj_gamehandler.color == 1){obj_gamehandler.hp = 5; obj_gamehandler.fuel = 10}
-    if (obj_gamehandler.color == 2){obj_gamehandler.hp = 7; obj_gamehandler.fuel = 15}
-}
+            <string> /*   if(obj_gamehandler.car == 0){obj_gamehandler.fuel = global.startfuel; hp = global.starthp;}
+    if(obj_gamehandler.car == 1){obj_gamehandler.fuel = global.startfuel+2; hp = global.starthp+1;}
+    if(obj_gamehandler.car == 2){obj_gamehandler.fuel = global.startfuel+4; hp = global.starthp+2;}
 </string>
           </argument>
         </arguments>
@@ -111,7 +108,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rm_levelselect);
+            <string>    if(obj_gamehandler.car == 0){obj_gamehandler.fuel = obj_gamehandler.startfuel; hp = obj_gamehandler.starthp;}
+    if(obj_gamehandler.car == 1){obj_gamehandler.fuel = obj_gamehandler.startfuel+2; hp = obj_gamehandler.starthp+1;}
+    if(obj_gamehandler.car == 2){obj_gamehandler.fuel = obj_gamehandler.startfuel+4; hp = obj_gamehandler.starthp+2;}
+room_goto(rm_levelselect);
+
 </string>
           </argument>
         </arguments>

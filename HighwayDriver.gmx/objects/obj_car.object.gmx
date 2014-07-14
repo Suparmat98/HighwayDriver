@@ -54,7 +54,7 @@
           <argument>
             <kind>1</kind>
             <string>/// Initializing variables
-
+roomspeed = 3;
 powerup = false;
 change = 1;
 setalarm = true;
@@ -216,8 +216,13 @@ if (key_up &amp;&amp; key_down) or (!key_up &amp;&amp; !key_down){ vspeed = 0}
 //moving
 if (key_left){hspeed = -3}
 if (key_right){hspeed = 3}
-if (key_up){vspeed = -3}
-if (key_down){vspeed = 2.5}
+
+if (key_up){
+    vspeed = -3
+}
+if (key_down){
+    vspeed = 2.5
+}
 
 //vertical collision
 if place_meeting(x,y+vspeed,par_wall)
@@ -233,6 +238,8 @@ if place_meeting(x+hspeed,y,par_wall)
     hspeed = 0;
 }
 
+//setting the roomspeed
+background_vspeed[0] = 3;
 </string>
           </argument>
         </arguments>

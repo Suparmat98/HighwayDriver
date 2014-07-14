@@ -60,6 +60,10 @@
     <sprites name="gui">
       <sprite>sprites\spr_coin</sprite>
       <sprite>sprites\spr_fuelcounter</sprite>
+      <sprite>sprites\spr_pointer</sprite>
+      <sprite>sprites\spr_pointerstripe</sprite>
+      <sprite>sprites\spr_plus</sprite>
+      <sprite>sprites\spr_minus</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -94,6 +98,13 @@
       <object>objects\txt_gameover</object>
       <object>objects\obj_coin</object>
       <object>objects\obj_fuelcounter</object>
+      <object>objects\obj_pointer1</object>
+      <object>objects\obj_pointer2</object>
+      <object>objects\obj_pointerstripe</object>
+      <object>objects\obj_minushp</object>
+      <object>objects\obj_minusfuel</object>
+      <object>objects\obj_plushp</object>
+      <object>objects\obj_plusfuel</object>
     </objects>
     <objects name="traffic">
       <object>objects\obj_traffic_car</object>
@@ -116,6 +127,7 @@
       <object>objects\obj_light</object>
       <object>objects\obj_lamps</object>
       <object>objects\obj_gamehandler</object>
+      <object>objects\obj_shophandler</object>
     </objects>
     <objects name="blocks">
       <object>objects\obj_blk_start</object>
